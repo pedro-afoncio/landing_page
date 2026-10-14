@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Pedro Afoncio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="topo">
+        <h1>Pedro Afoncio - Desenvolvedor Web</h1>
+        <nav><a href="index.html">Home</a><a href="curriculo.html">Currículo</a><a href="github.html">GitHub</a><a
+                href="servicos.html">Serviços</a><a href="contato.html" class=ativo>Contato</a></nav>
+    </header>
+    <main>
+
+        <section>
+            <h2>Solicite uma proposta</h2>
+            <form action="mailto:pedro.afoncio@uvvnet.com.br" method="post" enctype="text/plain"    >
+                <label for="nome">Nome completo</label><input type="text" id="nome" name="nome" required>
+                <label for="tel">Telefone</label><input type="tel" id="tel" name="telefone" required>
+                <label for="email">E-mail</label><input type="email" id="email" name="email" required>
+                <label>Tipo de pessoa</label>
+                <input type="radio" id="pf" name="pessoa" value="fisica" checked><label for="pf"
+                    style="display:inline">Pessoa física</label>
+                <input type="radio" id="pj" name="pessoa" value="juridica"><label for="pj" style="display:inline">Pessoa
+                    jurídica</label>
+                <label>Melhor horário para contato</label>
+                <input type="checkbox" name="horario" value="manha"> Manhã
+                <input type="checkbox" name="horario" value="tarde"> Tarde
+                <input type="checkbox" name="horario" value="noite"> Noite
+                <label for="servico">Tipo de serviço desejado</label>
+                <select id="servico" name="servico">
+                    <option value="">Selecione...</option>
+                    <option>Página estática (1 a 2 páginas)</option>
+                    <option>Página estática (3 a 5 páginas)</option>
+                    <option>Página estática (mais de 5 páginas)</option>
+                    <option>Página dinâmica</option>
+                    <option>Página super avançada</option>
+                </select>
+                <label for="desc">Breve descrição do que deseja contratar</label><textarea id="desc" name="descricao"
+                    rows="5"></textarea>
+                <input type="checkbox" name="aceite" required> Autorizo o contato e o envio de proposta<br>
+                <button type="submit">Enviar</button> <button type="reset">Limpar</button>
+            </form>
+        </section>
+    </main>
+    <footer><a href="#topo">Voltar ao topo</a> | <a href="https://www.w3schools.com" target="_blank">Site externo de
+            apoio (W3Schools)</a><br>&copy; 2026 Pedro Afoncio</footer>
+</body>
+
+</html>
